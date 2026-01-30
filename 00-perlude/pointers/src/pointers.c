@@ -8,6 +8,10 @@ int main() {
 
   ip = &x;
   printf("The address of x is %p\n", ip);
+  printf("The value of x is %d\n", *ip);
+
+  *ip = *ip + 10;
+  printf("After incrementation the value of x becomes: %d\n", x);
 
   y = *ip;
   printf("New value of y is: %d\n", y);
@@ -27,3 +31,8 @@ int main() {
 
   return 0;
 }
+
+/* void getvalue() { */
+/*   // ....... */
+/*   printf("the address of arrays z is: %p\n", ip); */
+/* } */
